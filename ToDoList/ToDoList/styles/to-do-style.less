@@ -1,0 +1,70 @@
+﻿body, ul, li, a, span, form, input, button, label{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    #list-nav{
+        margin: 20px;
+
+        & > li{
+            font-family: 'Comic Sans MS', cursives;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            position: relative;
+            margin-left: 10px;
+
+            ul{
+                background: #64cec4;
+                border-top: 5px solid #64cec4;
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                border-radius: 10px;
+
+                li{
+                    padding: 10px 15px;
+
+                }
+            }
+
+            &.current{
+                background: #64cec4;
+                border-bottom: none;
+
+                ul{
+                  display:block;
+               }
+            }
+              
+            &:hover{
+                  background: #64cec4;
+            }
+        }
+    }
+
+    #add-list{
+        input{
+            display: none;
+        }
+
+        button{
+            display: none;
+        }
+    }
+
+    #item-value{
+        margin-top: 20px;
+    }
+}

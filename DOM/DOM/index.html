@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Document Object Model</title>
+    <script src="sizzle.min.js"></script>
+    <script src="query-selector-shim.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+            <li>Some li items</li>
+            <li>Some li items</li>
+            <li><div></div>Some li items</li>
+            <li>Some li items</li>
+        </ul>
+        <div>
+            <div>
+                <label for="text-input">Enter text here: </label>
+                <input type="text" id="text-input"/>
+            </div>
+            <div><input type="color" value="#dddddd" id="color-changer"/></div>
+        </div>
+        <div>
+            <div>
+                <button onclick="findNestedDivNodes()">Exercise 1.1</button>
+                <button onclick="findNestedDivNodesByTagName()">Exercise 1.2</button>
+            </div>
+            <div>
+                <button onclick="getInputValue()">Exercise 2</button>
+                <button onclick="colorChanger()">Exercise 3</button>
+            </div>
+            <div>
+                <span>Exercise 4*: Run 1.1 in IE 6 mode</span>
+            </div>
+        </div>
+    </div>
+    <script src="dom-elements.js"></script>
+</body>
+</html>

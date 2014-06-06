@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Snake Game</title>
+    <link href="styles/snake.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <h1>SNAKE GAME!</h1>
+    <canvas id="snake-game" class="clearfix" width="450" height="450"></canvas>
+    <script src="scripts/03-snake-engine.js"></script>
+    <ul id="main-menu" class="clearfix">
+        <li id="start-game" onclick="startGame()"><a href="#">Start</a></li>
+        <li id="end-game" onclick="forseEndGame()"><a href="#">End</a></li>
+        <li id="save-score-field" style="display: none;">
+            <input type="text" id="player-name" placeholder="player name"/>
+            <a href="#" id="save-score-btn">Save score</a>
+        </li>
+    </ul>
+    <div><a href="#" id="scores">Scores</a></div>
+    <div id="top-scores-field">  
+    </div>
+</body>
+</html>
